@@ -13,6 +13,7 @@ class ConexionDB:
         if self.conexion is None or not self.conexion.open:
             self.conexion = pymysql.connect(
                 host=self.host,
+                port=self.port,
                 user=self.user,
                 password=self.password,
                 db=self.db,
